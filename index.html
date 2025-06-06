@@ -1,11 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Umair - Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/847/847969.png" />
 </head>
 <body>
-    
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <!-- <li><a href="#education">Education</a></li> -->
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <!-- <li><a href="#expereince">Professional Experience</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-content">
+      <img src="./images/umair.jpg" alt="Muhammad Umair" class="profile-pic" />
+      <h1>Muhammad Umair</h1>
+      <p class="title">Web Developer | Website Tester</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section-container">
+      <h2>About Me</h2>
+      <p>
+        Accomplished Software Engineer and Flutter Android App Developer with expertise in designing and implementing
+high-performance mobile applications. Proficient in software development lifecycle, cross-platform solutions, and agile
+methodologies. Skilled at transforming ideas into robust, user-centric digital products with seamless functionality.
+Committed to leveraging modern technologies for software excellence and business growth.
+
+      </p>
+    </section>
+
+    <div class="container">
+    <!-- <div class="education-entry">
+      <h2>Education</h2>
+      <div class="item">
+        <div class="title">National Textile University</div>
+        <div class="sub-title">BS - Software Engineering <span class="date">2021 - 2025</span></div>
+        <div class="clear"></div>
+        <p>CGPA: 3.97</p>
+      </div>
+      <div class="item">
+        <div class="title">Punjab College for Women</div>
+        <div class="sub-title">FSc - Pre Medical <span class="date">2018 - 2020</span></div>
+        <div class="clear"></div>
+        <p>Percentage: 91%</p>
+      </div>
+      <div class="item">
+        <div class="title">Chiniot Islamia School & College</div>
+        <div class="sub-title">Matriculation</div>
+        <p>Percentage: 97%</p>
+      </div>
+    </div> -->
+
+    <section id="skills" class="section-container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Flutter & Dart</li>
+        <li>Firebase</li>
+        <li>REST APIs</li>
+        <li>UI/UX Design Basics</li>
+        <li>Programming</li>
+        <li>Software Quality Assurance</li>
+        <li>Database Management</li>
+        <li>Skilled Communication</li>
+        <li>Software Testing</li>
+        <li>Project Management</li>
+        <li>Web Developement</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section-container">
+  <h2>Projects</h2>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('mobile')">Mobile Projects</button>
+    <button class="tab-button" onclick="showTab('web')">Web Projects</button>
+    <button class="tab-button" onclick="showTab('database')">Database & OOP</button>
+    <button class="tab-button" onclick="showTab('cpp')">C++</button>
+  </div>
+
+  <!-- Tab Contents -->
+  <div id="mobile" class="tab-content active">
+    <!-- Your existing mobile projects cards here -->
+    <div class="project-card">
+      <h3>Slack App Clone</h3>
+      <p>Frontend clone of Slack application built in Android.</p>
+      <a href="https://github.com/NoorSarfrazzz/slack-frontend-clone.git" target="_blank" class="btn">View Code</a>
+    </div>
+    <div class="project-card">
+      <h3>Flavour Fusion - Reciepe App</h3>
+      <p>A fully functional Recipe App built with Flutter and Dart...</p>
+      <a href="https://github.com/NoorSarfrazzz/Flavour-Fusion_Receipe-App.git" target="_blank" class="btn">View Code</a>
+    </div>
+    <div class="project-card">
+    <h3>Lush Layers - Wallpaper App</h3>
+    <p>Explore a beautiful collection of high-quality wallpapers with rich colors and textures. Easily browse, download, and set stunning backgrounds to personalize your device. Fresh wallpapers added regularly to keep your screen vibrant and unique.</p>
+    <a href="https://github.com/NoorSarfrazzz/Lush-Layers---Wallpaper-App.git" target="_blank" class="btn">View Code</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Random Quote Generator App</h3>
+    <p>A simple app that displays inspiring and motivational quotes at the tap of a button. Perfect for daily encouragement and positivity.</p>
+    <a href="https://github.com/NoorSarfrazzz/Random-Quote-Generator-Flutter-Application.git" target="_blank" class="btn">View Code</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Flashcard Quiz App</h3>
+    <p>An interactive app designed for quick learning and revision. Users can flip flashcards to test their knowledge on various topics, making studying fun and effective.</p>
+    <a href="https://github.com/NoorSarfrazzz/Flashcard-Quiz-app-Flutter.git" target="_blank" class="btn">View Code</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Fitness Tracking App</h3>
+    <p>A user-friendly app that helps you monitor workouts, track daily steps, calories burned, and set fitness goals. Stay motivated and achieve a healthier lifestyle with real-time progress updates.</p>
+    <a href="https://github.com/NoorSarfrazzz/Fitness-Tracking-App-Flutter.git" target="_blank" class="btn">View Code</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Chatgpt Frontend Clone</h3>
+    <p>A responsive and interactive UI replica of ChatGPT using Flutter/React. It mimics the look and feel of the original ChatGPT chat interface, allowing users to send and receive messages in a conversational format.</p>
+    <a href="https://github.com/NoorSarfrazzz/Chatgpt---Frontend-Clone.git" target="_blank" class="btn">View Code</a>
+  </div>
+  </div>
+
+  <div id="web" class="tab-content">
+    <!-- Add your Web projects here -->
+    <div class="project-card">
+      <h3>ArtisanAppetites-Delight _ Resturant-Website</h3>
+      <p>A modern, user-friendly restaurant website showcasing menus, reservations, and contact details to enhance customer experience. It is made with using tailwindCSS</p>
+      <a href="https://github.com/NoorSarfrazzz/ArtisanAppetites-Delight---Resturant-Website.git" target="_blank" class="btn">View Code</a>
+    </div>
+    <!-- Add more Web projects here -->
+  </div>
+
+  <div id="database" class="tab-content">
+    <!-- Add your Database & OOP projects here -->
+    <div class="project-card">
+      <h3>Student Attendance Management System</h3>
+      <p>An OOP-based frontend with forms for attendance input and an SQL database backend for storing records efficiently.</p>
+      <a href="https://github.com/NoorSarfrazzz/Student-Attendance-Management-System.git" target="_blank" class="btn">View Code</a>
+    </div>
+    <!-- Add more Database/OOP projects here -->
+  </div>
+
+  <div id="cpp" class="tab-content">
+    <!-- Add your C++ projects here -->
+    <div class="project-card">
+      <h3>Dinasour Game</h3>
+      <p>A simple C++ game where the player controls a dinosaur to jump over obstacles and avoid collisions. The game features basic graphics and keyboard controls for an engaging gameplay experience.</p>
+      <a href="https://github.com/NoorSarfrazzz/Dinasour-Game---C-.git" target="_blank" class="btn">View Code</a>
+    </div>
+    <!-- Add more C++ projects here -->
+  </div>
+</section>
+
+ <!-- <div class="certification-entry">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Business English: Networking</li>
+        <li>Client Needs and Software Requirements</li>
+        <li>Foundations of Cybersecurity</li>
+        <li>Freelancing (NFTP + Digiskills)</li>
+        <li>HTML5, Introduction to CSS3</li>
+        <li>SEO</li>
+        <li>The Structured Query Language (SQL)</li>
+      </ul>
+    </div> -->
+
+    <!-- <div class="experience-entry">
+      <h2>Professional Experience</h2>
+      <div class="item">
+        <div class="title">Tech Hive Technologies</div>
+        <div class="sub-title">Development Intern <span class="date">May 2024 - July 2024</span></div>
+        <div class="clear"></div>
+      </div>
+      <div class="item">
+        <div class="title">TechPedia Company</div>
+        <div class="sub-title">Development Intern <span class="date">August 2024 - October 2024</span></div>
+        <div class="clear"></div>
+      </div>
+    </div> -->
+  </div>
+
+    <section id="contact" class="section-container">
+      <h2>Contact Me</h2>
+      <p>Contact#: <a href="tel:+923003093203">03003093203</a></p>
+      <p>Email: <a href="umair.sarfraz.125@gmail.com">umair.sarfraz.125@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-umair-9b2972282" target="_blank">linkedin.com/in/muhammad-umair</a></p>
+      <p>GitHub: <a href="https://github.com/Muhammad-Umair-developer" target="_blank">github.com/Muhammad-Umair-developer</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Muhammad Umair. All rights reserved.</p>
+  </footer>
+
+  <script>
+  function showTab(tabId) {
+    // Remove active class from all buttons and tab contents
+    document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+    // Add active class to the clicked button and its tab content
+    document.querySelector(`.tab-button[onclick="showTab('${tabId}')"]`).classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+  }
+</script>
+
 </body>
 </html>
